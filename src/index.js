@@ -1,9 +1,17 @@
 import React from "react";
 import ReactDom from "react-dom/client";
 
-const App = () => {
-  return <><h1>Hey There</h1></>
+import App from "./App";
+
+const Index = () => {
+
+  const name = "Ashish";
+  return (
+  <>
+  <App />
+  </>
+  );
 }
 
 const root = ReactDom.createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(<Index />);
